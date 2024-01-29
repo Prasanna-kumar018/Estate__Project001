@@ -8,15 +8,14 @@ const path = require("path");
 const Router = require("./routers/listing_router");
 let port = process.env.PORT;
 ConnectDb();
+app.listen(port, () => {
+  console.log("server is listening..." + port);
+});
 app.use(express.json());
 app.use(cookieparser());
 app.use("/api/users", router);
 app.use("/api/listing", Router);
 app.use(errorHandler);
-
-app.listen(port, () => {
-  console.log("server is listening..." + port);
-});
 const _dirname = path.resolve();
 
 app.use(express.static(path.join(_dirname, "/client/dist")));
