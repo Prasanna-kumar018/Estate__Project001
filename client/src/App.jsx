@@ -7,7 +7,7 @@ import Sign_Up from "./pages/Sign_Up";
 import Sign_in from "./pages/Sign_in";
 import ProtectedPage from "./pages/ProtectedPage";
 import Profile from "./pages/Profile"; 
-import Create_listing from "./pages/create_listing";
+import Create_listing from "./pages/Create_listing";
 import Listing_Page from "./pages/Listing_Page";
 import EditListing from "./pages/EditListing";
 import Search from "./pages/Search";
